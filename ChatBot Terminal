@@ -1,0 +1,108 @@
+import java.util.Scanner;
+
+public class PI {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+            System.out.println("Olá, sou o ChatBot de atendimento do Studio Oliveira, vou lhe auxiliar no atendimento de hoje.\nSelecione abaixo o número que corresponde ao que você dejesa hoje.");
+
+            System.out.println("1 - Valores\n2 - Horario de funcionamento\n" + "3 - Contatos e endereço\n" + "4 - Conversar com Alessandra.\n" +  "5 - Conversar com Tallyta.");
+                               
+                 
+
+                 System.out.println("Digite o número:");
+            int numero = scanner.nextInt();
+           
+                
+
+    switch (numero) { 
+                    case 1:
+                    System.out.println("Nossos serviços abaixo:");
+                    System.out.println( "1 - Aplicação\n" + 
+                                        "2 - Manutenção\n" + 
+                                        "3 - Nail Arte\n" + 
+                                        "4 - Manicure\n" +
+                                        "Selecione qual dos nossos serviços você deseja saber os preços:");
+                                        int servicos = scanner.nextInt();
+                                        
+                    switch (servicos) {
+                            case 1:
+                            System.out.println( "1 - Unhas de Fibra R$: 140,00\n" +
+                                                "2 - Banho de Gel R$: 110,00\n"+
+                                                "3 - Blindagem R$: 80,00\n"+
+                                                "4 - Blindagem Fiber R$: 100,00\n"+
+                                                "Digite qual das opções você deseja:");
+                                                int aplicacao = scanner.nextInt();
+                                                System.out.printf("Vocẽ selecionou a opção: %d, aguarde um retorno de um dos nossos atendentes.\n", aplicacao);
+                                                break;
+                            case 2:
+                            System.out.println( "1 - Unhas de Fibra R$: 95,00\n" +
+                                                "2 - Banho de Gel R$: 85,00\n"+
+                                                "3 - Blindagens R$: 80,00\n"+
+                                                "4 - Reposição de Unha R$: 15,00\n"+
+                                                "5 - Remoção R$: 40,00\n"+
+                                                "Digite qual das opções você deseja:");
+                                                int manutencao = scanner.nextInt();
+                                                System.out.printf("Vocẽ selecionou a opção: %d, aguarde um retorno de um dos nossos atendentes.\n", manutencao);
+                                                break;
+
+                            case 3:
+                            System.out.println( "1 - Encapsulada cada R$: 5,00\n" +
+                                                "2 - Encapsulada todas R$: 30,00\n"+
+                                                "3 - Francesa Reversa cada R$: 5,00\n"+
+                                                "4 - Francesa Reversa todas R$: 45,00\n"+
+                                                "5 - Francesa Sorriso cada R$: 5,00\n"+
+                                                "5 - Francesa Sorriso todas R$: 30,00\n"+
+                                                "5 - Esmaltação em gel R$: 25,00\n"+
+                                                "Digite qual das opções você deseja:");
+                                                int NailArte = scanner.nextInt();
+                                                System.out.printf("Vocẽ selecionou a opção: %d, aguarde um retorno de um dos nossos atendentes.\n", NailArte);
+                                                break;
+
+                            case 4:
+                            System.out.println( "1 - Manicure   R$: 25,00\n" +
+                                                "2 - Pedicure R$: 85,00\n"+
+                                                "3 - Manicure e Pedicure R$: 80,00\n"+
+                                                "4 - SPA dos Pés R$:  15,00\n"+
+                                                "Digite qual das opções você deseja:");
+                                                int manicure = scanner.nextInt();
+                                                System.out.printf("Vocẽ selecionou a opção: %d, aguarde um retorno de um dos nossos atendentes.\n", manicure);
+                                                break;
+                                                
+                                                
+                                        }
+        break;
+
+
+                
+     case 2:
+         System.out.println("Nosso horário de atendimento é das 8h ás 18h.");
+    
+     break;
+
+
+     case 3:
+        System.out.println("Nossos Contatos e Endereço:\n"+
+                 "@oliveira_studio62\n"+
+                 "(62) 9454-1831\n"+
+                "Rua R1 11, Residencial Itaipu.\n");
+            
+     break;
+
+
+
+    case 4:
+        System.out.println("Aguarde que em instantes você sera atendido...");
+                    
+        break;
+        
+    case 5:
+        System.out.println("Aguarde que em instantes você sera atendido...");
+                    
+        break;
+                                            
+                            
+                    
+                }
+    }
+}
